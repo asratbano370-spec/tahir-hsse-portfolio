@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Muhammad Tahir | HSSE Officer</title>
+  <meta name="description" content="Professional portfolio of Muhammad Tahir, HSSE Officer." />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#0f3d3e",
+            secondary: "#1f6f6d",
+            accent: "#d4a72c"
+          },
+          boxShadow: {
+            soft: "0 12px 40px rgba(15, 61, 62, 0.10)"
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    section {
+      scroll-margin-top: 85px;
+    }
+
+    .nav-link {
+      transition: color 0.2s ease;
+    }
+
+    .nav-link:hover {
+      color: #d4a72c;
+    }
+
+    .certificate-card {
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .certificate-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .modal {
+      display: none;
+    }
+
+    .modal.active {
+      display: flex;
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease;
+    }
+
+    .faq-item.active .faq-answer {
+      max-height: 300px;
+    }
+
+    .faq-item.active .faq-icon {
+      transform: rotate(180deg);
+    }
+
+    .faq-icon {
+      transition: transform 0.3s ease;
+    }
+  </style>
+</head>
+
+<body class="bg-slate-50 text-slate-700">
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="h-20 flex items-center justify-between">
+
+        <a href="#home" class="flex items-center gap-3">
+          <div class="w-11 h-11 rounded-xl bg-primary text-white flex items-center justify-center shadow-lg">
+            <i class="fa-solid fa-shield-halved text-xl"></i>
+          </div>
+          <div>
+            <h1 class="font-bold text-primary text-lg leading-tight">Muhammad Tahir</h1>
+            <p class="text-xs text-slate-500">HSSE Officer</p>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden lg:flex items-center gap-6 text-sm font-semibold">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#experience" class="nav-link">Experience</a>
+          <a href="#certificates" class="nav-link">Certificates</a>
+          <a href="#location" class="nav-link">Location</a>
+          <a href="#faq" class="nav-link">FAQ</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <a
+          href="https://wa.me/9660561664728"
+          target="_blank"
+          rel="noopener"
+          class="hidden sm:inline-flex items-center gap-2 bg-primary text-white px-5 py-3 rounded-lg text-sm font-semibold hover:bg-secondary transition"
+        >
+          <i class="fa-brands fa-whatsapp text-lg"></i>
+          Contact
+        </a>
+
+        <!-- Mobile Menu Button -->
+        <button
+          id="menuButton"
+          class="lg:hidden w-11 h-11 rounded-lg border border-slate-200 text-primary"
+          aria-label="Open menu"
+        >
+          <i class="fa-solid fa-bars text-xl"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Navigation -->
+      <nav
+        id="mobileMenu"
+        class="hidden lg:hidden pb-5 border-t border-slate-100 pt-4"
+      >
+        <div class="grid grid-cols-2 gap-3 text-sm font-semibold">
+          <a href="#home" class="mobile-link p-3 rounded-lg bg-slate-50">Home</a>
+          <a href="#about" class="mobile-link p-3 rounded-lg bg-slate-50">About</a>
+          <a href="#experience" class="mobile-link p-3 rounded-lg bg-slate-50">Experience</a>
+          <a href="#certificates" class="mobile-link p-3 rounded-lg bg-slate-50">Certificates</a>
+          <a href="#location" class="mobile-link p-3 rounded-lg bg-slate-50">Location</a>
+          <a href="#faq" class="mobile-link p-3 rounded-lg bg-slate-50">FAQ</a>
+          <a href="#contact" class="mobile-link p-3 rounded-lg bg-slate-50">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- ==================== HERO ==================== -->
+  <section id="home" class="pt-32 pb-20 bg-gradient-to-br from-primary via-[#155452] to-[#237c78] text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+        <div>
+          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 text-sm mb-6">
+            <i class="fa-solid fa-shield-heart text-accent"></i>
+            Health, Safety, Security & Environment
+          </div>
+
+          <h2 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
+            Muhammad Tahir
+          </h2>
+
+          <p class="text-xl sm:text-2xl text-amber-300 font-semibold mt-4">
+            HSSE Officer
+          </p>
+
+          <p class="mt-6 text-slate-200 text-lg leading-relaxed max-w-xl">
+            A dedicated Health, Safety and Environment professional focused on
+            promoting safe work practices, hazard control, incident prevention,
+            environmental responsibility and a strong safety culture.
+          </p>
+
+          <div class="flex flex-wrap gap-3 mt-8">
+            <a
+              href="https://wa.me/9660561664728"
+              target="_blank"
+              rel="noopener"
+              class="inline-flex items-center gap-2 bg-[#25D366] text-white px-6 py-3.5 rounded-xl font-semibold hover:opacity-90 transition"
+            >
+              <i class="fa-brands fa-whatsapp text-xl"></i>
+              WhatsApp
+            </a>
+
+            <a
+              href="tel:+9660561664728"
+              class="inline-flex items-center gap-2 bg-white text-primary px-6 py-3.5 rounded-xl font-semibold hover:bg-slate-100 transition"
+            >
+              <i class="fa-solid fa-phone"></i>
+              Call Now
+            </a>
+
+            <button
+              onclick="openCVModal()"
+              class="inline-flex items-center gap-2 border border-white/40 px-6 py-3.5 rounded-xl font-semibold hover:bg-white/10 transition"
+            >
+              <i class="fa-solid fa-eye"></i>
+              View CV
+            </button>
+
+            <button
+              onclick="showFileNotice()"
+              class="inline-flex items-center gap-2 border border-amber-300/60 text-amber-100 px-6 py-3.5 rounded-xl font-semibold hover:bg-white/10 transition"
+            >
+              <i class="fa-solid fa-download"></i>
+              Download CV
+            </button>
+          </div>
+        </div>
+
+        <div class="relative">
+          <div class="bg-white text-slate-700 rounded-3xl shadow-2xl p-7 sm:p-9">
+            <div class="flex items-center gap-4 pb-6 border-b">
+              <div class="w-16 h-16 rounded-2xl bg-primary text-white flex items-center justify-center text-2xl">
+                <i class="fa-solid fa-user-shield"></i>
+              </div>
+              <div>
+                <h3 class="font-bold text-xl text-primary">Professional Profile</h3>
+                <p class="text-sm text-slate-500">Safety • Health • Environment</p>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-4 mt-6">
+              <div class="bg-slate-50 rounded-xl p-4">
+                <i class="fa-solid fa-helmet-safety text-secondary text-xl"></i>
+                <p class="font-bold mt-2 text-primary">Safety</p>
+                <p class="text-xs text-slate-500 mt-1">Hazard control & prevention</p>
+              </div>
+
+              <div class="bg-slate-50 rounded-xl p-4">
+                <i class="fa-solid fa-leaf text-secondary text-xl"></i>
+                <p class="font-bold mt-2 text-primary">Environment</p>
+                <p class="text-xs text-slate-500 mt-1">Responsible work practices</p>
+              </div>
+
+              <div class="bg-slate-50 rounded-xl p-4">
+                <i class="fa-solid fa-fire-extinguisher text-secondary text-xl"></i>
+                <p class="font-bold mt-2 text-primary">Emergency</p>
+                <p class="text-xs text-slate-500 mt-1">Fire & emergency awareness</p>
+              </div>
+
+              <div class="bg-slate-50 rounded-xl p-4">
+                <i class="fa-solid fa-clipboard-check text-secondary text-xl"></i>
+                <p class="font-bold mt-2 text-primary">Compliance</p>
+                <p class="text-xs text-slate-500 mt-1">Standards & procedures</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==================== ABOUT ==================== -->
+  <section id="about" class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="max-w-3xl mb-12">
+        <p class="text-secondary font-bold uppercase tracking-wider text-sm">About</p>
+        <h2 class="text-3xl sm:text-4xl font-bold text-primary mt-3">
+          Professional Safety Profile
+        </h2>
+        <p class="mt-5 text-slate-600 leading-relaxed">
+          Muhammad Tahir is an HSSE professional with experience in safety
+          monitoring, hazard control, construction activities, incident
+          investigation, toolbox talks, safety inductions and field operations.
+          His professional approach is focused on building safer workplaces
+          through awareness, compliance and practical risk management.
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-8">
+
+        <div class="bg-white rounded-2xl shadow-soft p-7 border border-slate-100">
+          <h3 class="text-xl font-bold text-primary mb-6">
+            <i class="fa-solid fa-user mr-2 text-accent"></i>
+            Personal Information
+          </h3>
+
+          <div class="grid sm:grid-cols-2 gap-5">
+            <div>
+              <p class="text-xs uppercase text-slate-400 font-bold">Name</p>
+              <p class="font-semibold mt-1">Muhammad Tahir</p>
+            </div>
+
+            <div>
+              <p class="text-xs uppercase text-slate-400 font-bold">Profession</p>
+              <p class="font-semibold mt-1">HSSE Officer</p>
+            </div>
+
+            <div>
+              <p class="text-xs uppercase text-slate-400 font-bold">Nationality</p>
+              <p class="font-semibold mt-1">Pakistani</p>
+            </div>
+
+            <div>
+              <p class="text-xs uppercase text-slate-400 font-bold">Languages</p>
+              <p class="font-semibold mt-1">English, Arabic, Urdu</p>
+            </div>
+
+            <div>
+              <p class="text-xs uppercase text-slate-400 font-bold">Working Region</p>
+              <p class="font-semibold mt-1">Saudi Arabia / Pakistan</p>
+            </div>
+
+            <div>
+              <p class="text-xs uppercase text-slate-400 font-bold">Email</p>
+              <a href="mailto:muhammadtahir835@gmail.com" class="font-semibold text-secondary break-all">
+                muhammadtahir835@gmail.com
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-primary rounded-2xl shadow-soft p-7 text-white">
+          <h3 class="text-xl font-bold mb-6">
+            <i class="fa-solid fa-award mr-2 text-amber-300"></i>
+            Core Competencies
+          </h3>
+
+          <div class="flex flex-wrap gap-3">
+            <span class="bg-white/10 border border-white/15 px-4 py-2 rounded-lg text-sm">Health & Safety</span>
+            <span class="bg-white/10 border border-white/15 px-4 py-2 rounded-lg text-sm">Hazard Control</span>
+            <span class="bg-white/10 border border-white/15 px-4 py-2 rounded-lg text-sm">Risk Awareness</span>
+            <span class="bg-white/10 border border-white/15 px-4 py-2 rounded-lg text-sm">Toolbox Talks</span>
+            <span class="bg-white/10 border border-white/15 px-4 py-2 rounded-lg text-sm">Safety Induction</span>
+            <span class="bg-white/10 border border-white/15 px-4 py-2 rounded-lg text-sm">Incident Investigation</span>
+            <span class="bg-white/10 border border-white/15 px-4 py-2 rounded-lg text-sm">Fire Safety</span>
+            <span class="bg-white/10 border border-white/15 px-4 py-2 rounded-lg text-sm">Environmental Awareness</span>
+            <span class="bg-white/10 border border-white/15 px-4 py-2 rounded-lg text-sm">Pipeline Safety</span>
+            <span class="bg-white/10 border border-white/15 px-4 py-2 rounded-lg text-sm">Field Safety</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==================== EXPERIENCE - ALL IN ONE ==================== -->
+  <section id="experience" class="py-20 bg-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="max-w-3xl mb-12">
+        <p class="text-secondary font-bold uppercase tracking-wider text-sm">
+          Professional Journey
+        </p>
+        <h2 class="text-3xl sm:text-4xl font-bold text-primary mt-3">
+          Experience
+        </h2>
+        <p class="mt-4 text-slate-600">
+          All professional work experience is presented together in one unified section.
+        </p>
+      </div>
+
+      <div class="relative border-l-2 border-secondary/30 ml-3 sm:ml-5 space-y-8">
+
+        <!-- Experience 1 -->
+        <article class="relative pl-8 sm:pl-12">
+          <div class="absolute -left-[11px] top-8 w-5 h-5 rounded-full bg-accent border-4 border-slate-100"></div>
+
+          <div class="bg-white rounded-2xl p-6 sm:p-8 shadow-soft">
+            <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
+              <div>
+                <span class="inline-block bg-primary/10 text-primary text-xs font-bold px-3 py-1 rounded-full">
+                  SAFETY OFFICER
+                </span>
+                <h3 class="text-xl sm:text-2xl font-bold text-primary mt-3">
+                  Etihad Sugar Mills Pvt Ltd
+                </h3>
+              </div>
+              <span class="text-sm font-semibold text-secondary">
+                20-01-2020 to 20-07-2020
+              </span>
+            </div>
+
+            <div class="mt-5 grid sm:grid-cols-2 gap-3 text-sm text-slate-600">
+              <p><i class="fa-solid fa-check text-secondary mr-2"></i>Safety Monitoring</p>
+              <p><i class="fa-solid fa-check text-secondary mr-2"></i>Hazard Control</p>
+              <p><i class="fa-solid fa-check text-secondary mr-2"></i>Toolbox Talks</p>
+              <p><i class="fa-solid fa-check text-secondary mr-2"></i>Safety Induction</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Experience 2 -->
+        <article class="relative pl-8 sm:pl-12">
+          <div class="absolute -left-[11px] top-8 w-5 h-5 rounded-full bg-secondary border-4 border-slate-100"></div>
+
+          <div class="bg-white rounded-2xl p-6 sm:p-8 shadow-soft">
+            <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
+              <div>
+                <span class="inline-block bg-primary/10 text-primary text-xs font-bold px-3 py-1 rounded-full">
+                  HSE OFFICER
+                </span>
+                <h3 class="text-xl sm:text-2xl font-bold text-primary mt-3">
+                  Allied Petroleum Oil & Gas
+                </h3>
+              </div>
+              <span class="text-sm font-semibold text-secondary">
+                25-07-2020 to 09-08-2024
+              </span>
+            </div>
+
+            <div class="mt-5 grid sm:grid-cols-2 gap-3 text-sm text-slate-600">
+              <p><i class="fa-solid fa-check text-secondary mr-2"></i>Construction Safety</p>
+              <p><i class="fa-solid fa-check text-secondary mr-2"></i>Incident Investigation</p>
+              <p><i class="fa-solid fa-check text-secondary mr-2"></i>Fire Extinguisher Checks</p>
+              <p><i class="fa-solid fa-check text-secondary mr-2"></i>Toolbox Talks</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Experience 3 -->
+        <article class="relative pl-8 sm:pl-12">
+          <div class="absolute -left-[11px] top-8 w-5 h-5 rounded-full bg-primary border-4 border-slate-100"></div>
+
+          <div class="bg-white rounded-2xl p-6 sm:p-8 shadow-soft">
+            <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
+              <div>
+                <span class="inline-block bg-primary/10 text-primary text-xs font-bold px-3 py-1 rounded-full">
+                  SAFETY OFFICER
+                </span>
+                <h3 class="text-xl sm:text-2xl font-bold text-primary mt-3">
+                  Petroleum Exploration Pvt Ltd
+                </h3>
+              </div>
+              <span class="text-sm font-semibold text-secondary">
+                20-08-2024 to 25-08-2025
+              </span>
+            </div>
+
+            <div class="mt-5 text-sm text-slate-600">
+              <p class="mb-3">
+                <i class="fa-solid fa-location-dot text-secondary mr-2"></i>
+                Pipeline Safety & Field Activities
+              </p>
+              <p>
+                <i class="fa-solid fa-industry text-secondary mr-2"></i>
+                Badin IV South Avesha & Aminah Gas Fields
+              </p>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==================== CERTIFICATES ==================== -->
+  <section id="certificates" class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-5 mb-12">
+        <div class="max-w-3xl">
+          <p class="text-secondary font-bold uppercase tracking-wider text-sm">
+            Qualifications & Credentials
+          </p>
+          <h2 class="text-3xl sm:text-4xl font-bold text-primary mt-3">
+            Degrees & Professional Certificates
+          </h2>
+          <p class="mt-4 text-slate-600">
+            Academic qualifications and professional safety credentials.
+          </p>
+        </div>
+
+        <button
+          onclick="showFileNotice()"
+          class="inline-flex items-center justify-center gap-2 border border-primary text-primary px-5 py-3 rounded-xl font-semibold hover:bg-primary hover:text-white transition"
+        >
+          <i class="fa-solid fa-download"></i>
+          Download Credentials
+        </button>
+      </div>
+
+
+      <!-- DEGREES -->
+      <h3 class="text-2xl font-bold text-primary mb-6">
+        <i class="fa-solid fa-graduation-cap text-accent mr-2"></i>
+        Academic Degrees
+      </h3>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-14">
+
+        <div class="certificate-card bg-white rounded-2xl shadow-soft border border-slate-100 p-6 flex flex-col">
+          <div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center text-xl">
+            <i class="fa-solid fa-flask"></i>
+          </div>
+          <h4 class="font-bold text-primary mt-5">BS Chemistry</h4>
+          <p class="text-sm text-slate-500 mt-2 flex-grow">
+            Khwaja Fareed University of Engineering & Information Technology
+          </p>
+          <div class="flex gap-2 mt-5">
+            <button onclick="openPreview('BS Chemistry', 'Khwaja Fareed University of Engineering & Information Technology')" class="flex-1 bg-primary text-white py-2.5 rounded-lg text-sm font-semibold">
+              <i class="fa-solid fa-eye mr-1"></i> View
+            </button>
+            <button onclick="showFileNotice()" class="flex-1 border border-primary text-primary py-2.5 rounded-lg text-sm font-semibold">
+              <i class="fa-solid fa-download mr-1"></i> Download
+            </button>
+          </div>
+        </div>
+
+        <div class="certificate-card bg-white rounded-2xl shadow-soft border border-slate-100 p-6 flex flex-col">
+          <div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center text-xl">
+            <i class="fa-solid fa-book-open"></i>
+          </div>
+          <h4 class="font-bold text-primary mt-5">B.Ed.</h4>
+          <p class="text-sm text-slate-500 mt-2 flex-grow">
+            Government College University Faisalabad
+          </p>
+          <div class="flex gap-2 mt-5">
+            <button onclick="openPreview('B.Ed.', 'Government College University Faisalabad')" class="flex-1 bg-primary text-white py-2.5 rounded-lg text-sm font-semibold">
+              <i class="fa-solid fa-eye mr-1"></i> View
+            </button>
+            <button onclick="showFileNotice()" class="flex-1 border border-primary text-primary py-2.5 rounded-lg text-sm font-semibold">
+              <i class="fa-solid fa-download mr-1"></i> Download
+            </button>
+          </div>
+        </div>
+
+        <div class="certificate-card bg-white rounded-2xl shadow-soft border border-slate-100 p-6 flex flex-col">
+          <div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center text-xl">
+            <i class="fa-solid fa-school"></i>
+          </div>
+          <h4 class="font-bold text-primary mt-5">Intermediate</h4>
+          <p class="text-sm text-slate-500 mt-2 flex-grow">
+            Academic qualification
+          </p>
+          <div class="flex gap-2 mt-5">
+            <button onclick="openPreview('Intermediate', 'Academic qualification')" class="flex-1 bg-primary text-white py-2.5 rounded-lg text-sm font-semibold">
+              <i class="fa-solid fa-eye mr-1"></i> View
+            </button>
+            <button onclick="showFileNotice()" class="flex-1 border border-primary text-primary py-2.5 rounded-lg text-sm font-semibold">
+              <i class="fa-solid fa-download mr-1"></i> Download
+            </button>
+          </div>
+        </div>
+
+        <div class="certificate-card bg-white rounded-2xl shadow-soft border border-slate-100 p-6 flex flex-col">
+          <div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center text-xl">
+            <i class="fa-solid fa-certificate"></i>
+          </div>
+          <h4 class="font-bold text-primary mt-5">Matriculation</h4>
+          <p class="text-sm text-slate-500 mt-2 flex-grow">
+            Academic qualification
+          </p>
+          <div class="flex gap-2 mt-5">
+            <button onclick="openPreview('Matriculation', 'Academic qualification')" class="flex-1 bg-primary text-white py-2.5 rounded-lg text-sm font-semibold">
+              <i class="fa-solid fa-eye mr-1"></i> View
+            </button>
+            <button onclick="showFileNotice()" class="flex-1 border border-primary text-primary py-2.5 rounded-lg text-sm font-semibold">
+              <i class="fa-solid fa-download mr-1"></i> Download
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- PROFESSIONAL CERTIFICATES -->
+      <h3 class="text-2xl font-bold text-primary mb-6">
+        <i class="fa-solid fa-shield-halved text-accent mr-2"></i>
+        Professional Safety Certifications & Recognition
+      </h3>
+
+      <div id="certificateGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+
+    </div>
+  </section>
+
+
+  <!-- ==================== CV ==================== -->
+  <section class="py-16 bg-primary">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+      <i class="fa-solid fa-file-lines text-4xl text-amber-300"></i>
+      <h2 class="text-3xl font-bold mt-4">Curriculum Vitae</h2>
+      <p class="text-slate-200 mt-3 max-w-2xl mx-auto">
+        View the professional CV profile or download the document when the official CV file is attached to the website.
+      </p>
+
+      <div class="flex flex-wrap justify-center gap-4 mt-7">
+        <button onclick="openCVModal()" class="bg-white text-primary px-6 py-3 rounded-xl font-bold">
+          <i class="fa-solid fa-eye mr-2"></i>View CV
+        </button>
+
+        <button onclick="showFileNotice()" class="border border-white/40 px-6 py-3 rounded-xl font-bold">
+          <i class="fa-solid fa-download mr-2"></i>Download CV
+        </button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==================== LOCATION ==================== -->
+  <section id="location" class="py-20 bg-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="max-w-3xl mb-10">
+        <p class="text-secondary font-bold uppercase tracking-wider text-sm">Location</p>
+        <h2 class="text-3xl sm:text-4xl font-bold text-primary mt-3">
+          Professional Working Regions
+        </h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-7">
+
+        <div class="bg-white rounded-2xl shadow-soft p-8 border border-slate-100">
+          <div class="w-14 h-14 rounded-xl bg-primary text-white flex items-center justify-center text-2xl">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <h3 class="text-xl font-bold text-primary mt-5">Saudi Arabia</h3>
+          <p class="text-slate-600 mt-3">
+            Professional working region with experience in industrial and field safety operations.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-soft p-8 border border-slate-100">
+          <div class="w-14 h-14 rounded-xl bg-secondary text-white flex items-center justify-center text-2xl">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <h3 class="text-xl font-bold text-primary mt-5">Pakistan</h3>
+          <p class="text-slate-600 mt-3">
+            Professional experience in construction, oil & gas and field safety activities.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==================== FAQ ==================== -->
+  <section id="faq" class="py-20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="text-center mb-12">
+        <p class="text-secondary font-bold uppercase tracking-wider text-sm">Questions & Answers</p>
+        <h2 class="text-3xl sm:text-4xl font-bold text-primary mt-3">
+          Frequently Asked Questions
+        </h2>
+      </div>
+
+      <div class="space-y-4">
+
+        <div class="faq-item bg-white border border-slate-200 rounded-xl overflow-hidden">
+          <button class="faq-button w-full text-left p-5 flex items-center justify-between font-bold text-primary">
+            What is Muhammad Tahir's professional expertise?
+            <i class="fa-solid fa-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer px-5">
+            <p class="pb-5 text-slate-600">
+              His professional expertise includes workplace safety, hazard control, safety monitoring, toolbox talks, safety inductions, incident investigation, fire safety and field safety activities.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item bg-white border border-slate-200 rounded-xl overflow-hidden">
+          <button class="faq-button w-full text-left p-5 flex items-center justify-between font-bold text-primary">
+            Which industries has he worked in?
+            <i class="fa-solid fa-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer px-5">
+            <p class="pb-5 text-slate-600">
+              His listed experience includes sugar manufacturing, petroleum and oil & gas operations, pipeline safety and field activities.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item bg-white border border-slate-200 rounded-xl overflow-hidden">
+          <button class="faq-button w-full text-left p-5 flex items-center justify-between font-bold text-primary">
+            Which regions are included in his professional profile?
+            <i class="fa-solid fa-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer px-5">
+            <p class="pb-5 text-slate-600">
+              The professional profile lists Saudi Arabia and Pakistan as working regions.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item bg-white border border-slate-200 rounded-xl overflow-hidden">
+          <button class="faq-button w-full text-left p-5 flex items-center justify-between font-bold text-primary">
+            How can Muhammad Tahir be contacted?
+            <i class="fa-solid fa-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer px-5">
+            <p class="pb-5 text-slate-600">
+              You can contact him directly by phone, WhatsApp or email using the contact details provided on this website.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==================== CONTACT ==================== -->
+  <section id="contact" class="py-20 bg-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <p class="text-secondary font-bold uppercase tracking-wider text-sm">Contact</p>
+        <h2 class="text-3xl sm:text-4xl font-bold text-primary mt-3">
+          Get In Touch
+        </h2>
+        <p class="mt-4 text-slate-600">
+          For professional communication, use the direct contact options below.
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-8">
+
+        <div class="bg-white rounded-2xl shadow-soft p-7 sm:p-8">
+          <h3 class="text-xl font-bold text-primary mb-6">Direct Contact</h3>
+
+          <div class="space-y-5">
+
+            <a href="tel:+9660561664728" class="flex items-center gap-4 p-4 rounded-xl bg-slate-50 hover:bg-slate-100 transition">
+              <div class="w-11 h-11 rounded-lg bg-primary text-white flex items-center justify-center">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div>
+                <p class="text-xs text-slate-400">Phone</p>
+                <p class="font-bold text-primary">+9660561664728</p>
+              </div>
+            </a>
+
+            <a href="https://wa.me/9660561664728" target="_blank" rel="noopener" class="flex items-center gap-4 p-4 rounded-xl bg-slate-50 hover:bg-slate-100 transition">
+              <div class="w-11 h-11 rounded-lg bg-green-500 text-white flex items-center justify-center">
+                <i class="fa-brands fa-whatsapp text-xl"></i>
+              </div>
+              <div>
+                <p class="text-xs text-slate-400">WhatsApp</p>
+                <p class="font-bold text-primary">+9660561664728</p>
+              </div>
+            </a>
+
+            <a href="mailto:muhammadtahir835@gmail.com" class="flex items-center gap-4 p-4 rounded-xl bg-slate-50 hover:bg-slate-100 transition">
+              <div class="w-11 h-11 rounded-lg bg-secondary text-white flex items-center justify-center">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div>
+                <p class="text-xs text-slate-400">Email</p>
+                <p class="font-bold text-primary break-all">muhammadtahir835@gmail.com</p>
+              </div>
+            </a>
+
+          </div>
+        </div>
+
+
+        <!-- Contact Form -->
+        <form id="contactForm" class="bg-white rounded-2xl shadow-soft p-7 sm:p-8">
+          <h3 class="text-xl font-bold text-primary mb-6">Send a Message</h3>
+
+          <div class="grid sm:grid-cols-2 gap-4">
+            <input type="text" id="senderName" placeholder="Your Name" required
+              class="w-full border border-slate-200 rounded-lg px-4 py-3 outline-none focus:ring-2 focus:ring-secondary" />
+
+            <input type="email" id="senderEmail" placeholder="Your Email" required
+              class="w-full border border-slate-200 rounded-lg px-4 py-3 outline-none focus:ring-2 focus:ring-secondary" />
+          </div>
+
+          <textarea id="senderMessage" rows="5" placeholder="Your Message" required
+            class="w-full border border-slate-200 rounded-lg px-4 py-3 mt-4 outline-none focus:ring-2 focus:ring-secondary"></textarea>
+
+          <button type="submit"
+            class="w-full mt-4 bg-primary text-white py-3.5 rounded-lg font-bold hover:bg-secondary transition">
+            <i class="fa-brands fa-whatsapp mr-2"></i>
+            Continue via WhatsApp
+          </button>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="bg-[#082a2b] text-white pt-14 pb-6">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="grid md:grid-cols-3 gap-10 pb-10 border-b border-white/10">
+
+        <div>
+          <div class="flex items-center gap-3">
+            <div class="w-11 h-11 rounded-xl bg-white/10 flex items-center justify-center">
+              <i class="fa-solid fa-shield-halved text-amber-300"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-lg">Muhammad Tahir</h3>
+              <p class="text-sm text-slate-400">HSSE Officer</p>
+            </div>
+          </div>
+
+          <p class="text-slate-400 text-sm mt-5 leading-relaxed">
+            Professional portfolio focused on health, safety, environmental awareness and responsible workplace practices.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="font-bold mb-5">Quick Links</h3>
+          <div class="grid grid-cols-2 gap-3 text-sm text-slate-400">
+            <a href="#home" class="hover:text-white">Home</a>
+            <a href="#about" class="hover:text-white">About</a>
+            <a href="#experience" class="hover:text-white">Experience</a>
+            <a href="#certificates" class="hover:text-white">Certificates</a>
+            <a href="#location" class="hover:text-white">Location</a>
+            <a href="#contact" class="hover:text-white">Contact</a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="font-bold mb-5">Connect</h3>
+
+          <div class="flex flex-wrap gap-3">
+            <a href="https://www.facebook.com/tahirhameed936" target="_blank" rel="noopener" aria-label="Facebook" class="w-10 h-10 rounded-lg bg-white/10 hover:bg-secondary flex items-center justify-center transition">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="https://www.instagram.com/tahirhameed936" target="_blank" rel="noopener" aria-label="Instagram" class="w-10 h-10 rounded-lg bg-white/10 hover:bg-secondary flex items-center justify-center transition">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="https://tiktok.com/@tahirhameed936" target="_blank" rel="noopener" aria-label="TikTok" class="w-10 h-10 rounded-lg bg-white/10 hover:bg-secondary flex items-center justify-center transition">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+
+            <a href="https://t.me/tahirhameed936" target="_blank" rel="noopener" aria-label="Telegram" class="w-10 h-10 rounded-lg bg-white/10 hover:bg-secondary flex items-center justify-center transition">
+              <i class="fa-brands fa-telegram"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/tahirhameed936" target="_blank" rel="noopener" aria-label="LinkedIn" class="w-10 h-10 rounded-lg bg-white/10 hover:bg-secondary flex items-center justify-center transition">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+
+            <a href="https://x.com/tahirhameed936" target="_blank" rel="noopener" aria-label="X" class="w-10 h-10 rounded-lg bg-white/10 hover:bg-secondary flex items-center justify-center transition">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-6 text-center text-sm text-slate-500">
+        © 2026 Muhammad Tahir. Professional HSSE Portfolio.
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ==================== PREVIEW MODAL ==================== -->
+  <div id="previewModal" class="modal fixed inset-0 z-[100] bg-black/70 items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-lg w-full shadow-2xl overflow-hidden">
+      <div class="bg-primary text-white p-5 flex items-center justify-between">
+        <h3 id="modalTitle" class="font-bold text-lg">Credential Preview</h3>
+        <button onclick="closeModal('previewModal')" class="text-white text-xl" aria-label="Close">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="p-8 text-center">
+        <div class="w-20 h-20 mx-auto rounded-2xl bg-primary/10 text-primary flex items-center justify-center text-3xl">
+          <i class="fa-solid fa-certificate"></i>
+        </div>
+
+        <h4 id="modalHeading" class="text-xl font-bold text-primary mt-5"></h4>
+        <p id="modalDescription" class="text-slate-600 mt-3 leading-relaxed"></p>
+
+        <div class="mt-7 flex gap-3">
+          <button onclick="closeModal('previewModal')" class="flex-1 border border-slate-300 py-3 rounded-lg font-semibold">
+            Close
+          </button>
+          <button onclick="showFileNotice()" class="flex-1 bg-primary text-white py-3 rounded-lg font-semibold">
+            <i class="fa-solid fa-download mr-1"></i>
+            Download
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ==================== CV MODAL ==================== -->
+  <div id="cvModal" class="modal fixed inset-0 z-[100] bg-black/70 items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-3xl w-full max-h-[90vh] overflow-y-auto shadow-2xl">
+      <div class="sticky top-0 bg-primary text-white p-5 flex items-center justify-between">
+        <h3 class="font-bold text-lg">Curriculum Vitae Overview</h3>
+        <button onclick="closeModal('cvModal')" class="text-white text-xl" aria-label="Close">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="p-7">
+        <h2 class="text-2xl font-bold text-primary">Muhammad Tahir</h2>
+        <p class="text-secondary font-semibold mt-1">HSSE Officer</p>
+
+        <div class="grid sm:grid-cols-2 gap-4 mt-6 text-sm">
+          <div class="bg-slate-50 p-4 rounded-xl">
+            <strong class="text-primary">Phone</strong>
+            <p class="mt-1">+9660561664728</p>
+          </div>
+
+          <div class="bg-slate-50 p-4 rounded-xl">
+            <strong class="text-primary">Email</strong>
+            <p class="mt-1 break-all">muhammadtahir835@gmail.com</p>
+          </div>
+        </div>
+
+        <h4 class="font-bold text-primary text-lg mt-7">Professional Experience</h4>
+        <ul class="mt-3 space-y-2 text-slate-600 text-sm">
+          <li>• Safety Officer — Etihad Sugar Mills Pvt Ltd</li>
+          <li>• HSE Officer — Allied Petroleum Oil & Gas</li>
+          <li>• Safety Officer — Petroleum Exploration Pvt Ltd</li>
+        </ul>
+
+        <h4 class="font-bold text-primary text-lg mt-7">Professional Focus</h4>
+        <p class="text-slate-600 text-sm mt-2">
+          Workplace safety, hazard control, toolbox talks, safety inductions,
+          incident investigation, fire safety, environmental awareness and field operations.
+        </p>
+
+        <button onclick="showFileNotice()" class="w-full mt-8 bg-primary text-white py-3.5 rounded-xl font-bold">
+          <i class="fa-solid fa-download mr-2"></i>
+          Download CV
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ==================== NOTICE MODAL ==================== -->
+  <div id="noticeModal" class="modal fixed inset-0 z-[110] bg-black/70 items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-md w-full p-7 text-center shadow-2xl">
+      <div class="w-16 h-16 mx-auto rounded-full bg-amber-100 text-accent flex items-center justify-center text-2xl">
+        <i class="fa-solid fa-file-arrow-down"></i>
+      </div>
+
+      <h3 class="text-xl font-bold text-primary mt-5">Document File Required</h3>
+
+      <p class="text-slate-600 mt-3 text-sm leading-relaxed">
+        The official PDF or image file can be connected to this button when the document file is added to the website folder.
+      </p>
+
+      <button onclick="closeModal('noticeModal')" class="w-full mt-6 bg-primary text-white py-3 rounded-lg font-semibold">
+        Close
+      </button>
+    </div>
+  </div>
+
+
+  <!-- ==================== JAVASCRIPT ==================== -->
+  <script>
+
+    /* Certificate Data */
+    const certificates = [
+      {
+        title: "NEBOSH International General Certificate",
+        description: "International General Certificate in Occupational Health and Safety."
+      },
+      {
+        title: "IOSH Managing Safely",
+        description: "Professional safety management certification."
+      },
+      {
+        title: "OSHAcademy 30-Hour General Industry Safety",
+        description: "General industry safety and health training."
+      },
+      {
+        title: "Saudi Heart Association CPR / BLS",
+        description: "First aid, CPR and basic life support training."
+      },
+      {
+        title: "Basic Fire Safety",
+        description: "Professional fire safety awareness training."
+      },
+      {
+        title: "Confined Space Entry",
+        description: "Confined space safety awareness and entry procedures."
+      },
+      {
+        title: "Permit to Work System",
+        description: "Permit to Work and workplace control system awareness."
+      },
+      {
+        title: "Hazard Communication",
+        description: "Hazard communication and workplace safety awareness."
+      },
+      {
+        title: "PPE Safety Training",
+        description: "Personal protective equipment awareness and safety practices."
+      },
+      {
+        title: "Work at Height Safety",
+        description: "Safety awareness for work at height activities."
+      },
+      {
+        title: "Chemicals and Health",
+        description: "Chemical safety and health awareness training."
+      },
+      {
+        title: "Safety Management",
+        description: "Fundamentals and principles of effective safety management."
+      },
+      {
+        title: "First Aid Certification",
+        description: "Basic first aid awareness and emergency response training."
+      },
+      {
+        title: "HSE Engineering Specialization",
+        description: "Health, safety and environmental engineering specialization."
+      },
+      {
+        title: "Saudi Aramco / C.A.T. Recognition",
+        description: "Professional project recognition and safety-related credentials."
+      },
+      {
+        title: "Safety Recognition Credential",
+        description: "Professional recognition related to safety performance and contribution."
+      }
+    ];
+
+    const grid = document.getElementById("certificateGrid");
+
+    certificates.forEach((certificate, index) => {
+      grid.innerHTML += `
+        <article class="certificate-card bg-white rounded-2xl shadow-soft border border-slate-100 p-6 flex flex-col">
+          <div class="flex items-start justify-between gap-4">
+            <div class="w-12 h-12 shrink-0 rounded-xl bg-primary/10 text-primary flex items-center justify-center text-xl">
+              <i class="fa-solid fa-certificate"></i>
+            </div>
+            <span class="text-xs font-bold text-slate-400">
+              ${String(index + 1).padStart(2, "0")}
+            </span>
+          </div>
+
+          <h4 class="font-bold text-primary mt-5 leading-snug">
+            ${certificate.title}
+          </h4>
+
+          <p class="text-sm text-slate-500 mt-3 leading-relaxed flex-grow">
+            ${certificate.description}
+          </p>
+
+          <div class="grid grid-cols-2 gap-3 mt-6">
+            <button
+              onclick='openPreview(${JSON.stringify(certificate.title)}, ${JSON.stringify(certificate.description)})'
+              class="bg-primary text-white py-2.5 rounded-lg text-sm font-semibold hover:bg-secondary transition"
+            >
+              <i class="fa-solid fa-eye mr-1"></i> View
+            </button>
+
+            <button
+              onclick="showFileNotice()"
+              class="border border-primary text-primary py-2.5 rounded-lg text-sm font-semibold hover:bg-primary hover:text-white transition"
+            >
+              <i class="fa-solid fa-download mr-1"></i> Download
+            </button>
+          </div>
+        </article>
+      `;
+    });
+
+
+    /* Mobile Menu */
+    const menuButton = document.getElementById("menuButton");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    menuButton.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+
+    document.querySelectorAll(".mobile-link").forEach(link => {
+      link.addEventListener("click", () => {
+        mobileMenu.classList.add("hidden");
+      });
+    });
+
+
+    /* FAQ Accordion */
+    document.querySelectorAll(".faq-button").forEach(button => {
+      button.addEventListener("click", () => {
+        const item = button.parentElement;
+
+        document.querySelectorAll(".faq-item").forEach(otherItem => {
+          if (otherItem !== item) {
+            otherItem.classList.remove("active");
+          }
+        });
+
+        item.classList.toggle("active");
+      });
+    });
+
+
+    /* Modals */
+    function openPreview(title, description) {
+      document.getElementById("modalTitle").textContent = "Credential Preview";
+      document.getElementById("modalHeading").textContent = title;
+      document.getElementById("modalDescription").textContent = description;
+      document.getElementById("previewModal").classList.add("active");
+      document.body.style.overflow = "hidden";
+    }
+
+    function openCVModal() {
+      document.getElementById("cvModal").classList.add("active");
+      document.body.style.overflow = "hidden";
+    }
+
+    function showFileNotice() {
+      document.getElementById("noticeModal").classList.add("active");
+      document.body.style.overflow = "hidden";
+    }
+
+    function closeModal(id) {
+      document.getElementById(id).classList.remove("active");
+
+      const activeModals = document.querySelectorAll(".modal.active");
+      if (activeModals.length === 0) {
+        document.body.style.overflow = "";
+      }
+    }
+
+    document.querySelectorAll(".modal").forEach(modal => {
+      modal.addEventListener("click", function(event) {
+        if (event.target === modal) {
+          closeModal(modal.id);
+        }
+      });
+    });
+
+
+    /* Contact Form - Opens WhatsApp with message */
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      const name = document.getElementById("senderName").value.trim();
+      const email = document.getElementById("senderEmail").value.trim();
+      const message = document.getElementById("senderMessage").value.trim();
+
+      const whatsappMessage =
+        `Hello Muhammad Tahir,%0A%0A` +
+        `Name: ${encodeURIComponent(name)}%0A` +
+        `Email: ${encodeURIComponent(email)}%0A` +
+        `Message: ${encodeURIComponent(message)}`;
+
+      window.open(
+        `https://wa.me/9660561664728?text=${whatsappMessage}`,
+        "_blank"
+      );
+    });
+
+
+    /* Escape key closes open modals */
+    document.addEventListener("keydown", function(event) {
+      if (event.key === "Escape") {
+        document.querySelectorAll(".modal.active").forEach(modal => {
+          closeModal(modal.id);
+        });
+      }
+    });
+
+  </script>
+
+</body>
+</html>
