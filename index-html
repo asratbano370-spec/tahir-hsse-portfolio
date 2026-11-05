@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Muhammad Tahir | HSSE Officer</title>
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+html{scroll-behavior:smooth;scroll-padding-top:5rem}
+body{background:#f8fafc;color:#0f172a;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .3s}
+.faq.open .faq-a{max-height:200px}
+.faq.open .chev{transform:rotate(180deg)}
+</style>
+</head>
+<body>
+<header class="fixed top-0 inset-x-0 z-40 bg-slate-900 text-white shadow" style="padding-top:env(safe-area-inset-top,0px)">
+<div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+<a href="#home" class="font-bold text-lg">Muhammad <span class="text-amber-400">Tahir</span></a>
+<button id="menuBtn" class="md:hidden px-3 py-1 border border-slate-600 rounded" aria-label="Menu">Menu</button>
+<nav id="nav" class="hidden md:flex gap-6 text-sm"></nav>
+</div>
+<nav id="mnav" class="hidden md:hidden flex-col px-4 pb-3 gap-2 text-sm"></nav>
+</header>
+
+<main>
+<section id="home" class="pt-32 pb-20 bg-gradient-to-br from-slate-900 to-slate-700 text-white">
+<div class="max-w-6xl mx-auto px-4">
+<p class="text-amber-400 font-semibold tracking-widest text-sm">HEALTH · SAFETY · SECURITY · ENVIRONMENT</p>
+<h1 class="text-4xl md:text-6xl font-extrabold mt-3">Muhammad Tahir</h1>
+<p class="text-xl md:text-2xl mt-3 text-slate-200">HSSE Officer in Saudi Arabia and the Gulf Region</p>
+<p class="mt-5 max-w-2xl text-slate-300">Dedicated to protecting people, assets and the environment through hazard control, incident investigation, safety training and strict compliance on construction, oil and gas sites.</p>
+<div class="mt-8 flex flex-wrap gap-3">
+<a href="https://wa.me/966561664728" target="_blank" rel="noopener" class="px-5 py-3 rounded bg-green-500 hover:bg-green-600 font-semibold">WhatsApp</a>
+<a href="tel:+966561664728" class="px-5 py-3 rounded bg-amber-500 hover:bg-amber-600 font-semibold text-slate-900">Call Now</a>
+<a href="#cv" class="px-5 py-3 rounded border border-white hover:bg-white hover:text-slate-900 font-semibold">View / Download CV</a>
+</div>
+</div>
+</section>
+
+<section id="about" class="py-20">
+<div class="max-w-6xl mx-auto px-4">
+<h2 class="sec">About</h2>
+<div class="grid md:grid-cols-2 gap-8 mt-8">
+<div class="card">
+<p>HSSE Officer with hands-on experience in construction, pipeline and field operations across oil, gas and industrial sites. Skilled in safety monitoring, incident investigation, toolbox talks, safety inductions and emergency preparedness.</p>
+<ul class="mt-5 space-y-2 text-sm">
+<li><b>Nationality:</b> Pakistani</li>
+<li><b>Languages:</b> English, Arabic, Urdu</li>
+<li><b>Based in:</b> Saudi Arabia</li>
+</ul>
+</div>
+<div class="card">
+<h3 class="font-bold mb-3">Core Competencies</h3>
+<div class="flex flex-wrap gap-2 text-sm" id="skills"></div>
+<h3 class="font-bold mt-5 mb-3">Computer Skills</h3>
+<div class="flex flex-wrap gap-2 text-sm" id="cskills"></div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="experience" class="py-20 bg-white">
+<div class="max-w-4xl mx-auto px-4">
+<h2 class="sec">Experience</h2>
+<div class="mt-10 border-l-4 border-amber-400 pl-6 space-y-8" id="exp"></div>
+</div>
+</section>
+
+<section id="certificates" class="py-20">
+<div class="max-w-6xl mx-auto px-4">
+<h2 class="sec">Degrees and Certificates</h2>
+<div class="mt-4"><button onclick="dlAll()" class="px-5 py-2 rounded bg-amber-500 font-semibold text-slate-900">Download All Documents (PDF)</button></div>
+<h3 class="font-bold text-xl mt-8 mb-4">Academic Degrees</h3>
+<div id="degrees" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5"></div>
+<h3 class="font-bold text-xl mt-12 mb-4">Professional Certificates</h3>
+<div id="certs" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5"></div>
+<h3 class="font-bold text-xl mt-12 mb-4">Recognitions and Site Documents</h3>
+<div id="recs" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5"></div>
+</div>
+</section>
+
+<section id="cv" class="py-20 bg-slate-900 text-white">
+<div class="max-w-4xl mx-auto px-4 text-center">
+<h2 class="text-3xl font-bold">Curriculum Vitae</h2>
+<p class="mt-3 text-slate-300">Complete professional profile of Muhammad Tahir, HSSE Officer.</p>
+<div class="mt-6 flex justify-center gap-3 flex-wrap">
+<button onclick="openDoc('cv')" class="px-5 py-3 rounded bg-amber-500 text-slate-900 font-semibold">View CV</button>
+<button onclick="dl('cv')" class="px-5 py-3 rounded border border-white font-semibold">Download CV</button>
+</div>
+</div>
+</section>
+
+<section id="location" class="py-20">
+<div class="max-w-6xl mx-auto px-4">
+<h2 class="sec">Location</h2>
+<p class="mt-4 text-slate-600">Working in Saudi Arabia and open to opportunities across the Gulf region.</p>
+<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+<div class="card"><h3 class="font-bold text-lg">Saudi Arabia</h3><p class="mt-2 text-sm text-slate-600">Currently working on the Saudi Aramco CRPO-20 pipeline project. Available for HSSE roles across the Kingdom.</p><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/Saudi+Arabia" class="inline-block mt-4 text-amber-600 font-semibold">Open in Maps</a></div>
+<div class="card"><h3 class="font-bold text-lg">United Arab Emirates</h3><p class="mt-2 text-sm text-slate-600">Open to HSSE opportunities in Dubai and across the UAE.</p><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/Dubai" class="inline-block mt-4 text-amber-600 font-semibold">Open in Maps</a></div>
+<div class="card"><h3 class="font-bold text-lg">Oman</h3><p class="mt-2 text-sm text-slate-600">Open to HSSE opportunities in the Sultanate of Oman.</p><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/Oman" class="inline-block mt-4 text-amber-600 font-semibold">Open in Maps</a></div>
+<div class="card"><h3 class="font-bold text-lg">Qatar</h3><p class="mt-2 text-sm text-slate-600">Open to HSSE opportunities in Qatar.</p><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/Qatar" class="inline-block mt-4 text-amber-600 font-semibold">Open in Maps</a></div>
+<div class="card"><h3 class="font-bold text-lg">Bahrain</h3><p class="mt-2 text-sm text-slate-600">Open to HSSE opportunities in the Kingdom of Bahrain.</p><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/Bahrain" class="inline-block mt-4 text-amber-600 font-semibold">Open in Maps</a></div>
+</div>
+</div>
+</section>
+
+<section id="faq" class="py-20 bg-white">
+<div class="max-w-3xl mx-auto px-4">
+<h2 class="sec">FAQ</h2>
+<div id="faqs" class="mt-8 space-y-3"></div>
+</div>
+</section>
+
+<section id="contact" class="py-20">
+<div class="max-w-4xl mx-auto px-4">
+<h2 class="sec">Contact</h2>
+<div class="grid md:grid-cols-2 gap-8 mt-8">
+<form id="form" class="card space-y-3">
+<input id="fn" required placeholder="Your name" class="inp">
+<input id="fe" type="email" required placeholder="Your email" class="inp">
+<textarea id="fm" required rows="4" placeholder="Your message" class="inp"></textarea>
+<button class="w-full py-3 rounded bg-slate-900 text-white font-semibold">Send Message</button>
+</form>
+<div class="card space-y-3">
+<a href="tel:+966561664728" class="block text-center py-3 rounded bg-amber-500 font-semibold">Call +966 56 166 4728</a>
+<a href="https://wa.me/966561664728" target="_blank" rel="noopener" class="block text-center py-3 rounded bg-green-500 text-white font-semibold">Chat on WhatsApp</a>
+<a href="mailto:muhammadtahir835@gmail.com" class="block text-center text-sm text-slate-600">muhammadtahir835@gmail.com</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer class="bg-slate-900 text-slate-300 py-10" style="padding-bottom:calc(2.5rem + env(safe-area-inset-bottom,0px))">
+<div class="max-w-6xl mx-auto px-4 text-center">
+<div class="flex flex-wrap justify-center gap-5 text-sm">
+<a target="_blank" rel="noopener" href="https://www.facebook.com/tahirhameed936">Facebook</a>
+<a target="_blank" rel="noopener" href="https://www.instagram.com/tahirhameed936">Instagram</a>
+<a target="_blank" rel="noopener" href="https://tiktok.com/@tahirhameed936">TikTok</a>
+<a target="_blank" rel="noopener" href="https://t.me/tahirhameed936">Telegram</a>
+<a target="_blank" rel="noopener" href="https://www.linkedin.com/in/tahirhameed936">LinkedIn</a>
+<a target="_blank" rel="noopener" href="https://x.com/tahirhameed936">X (Twitter)</a>
+</div>
+<p class="mt-5 text-xs">© 2026 Muhammad Tahir. All rights reserved.</p>
+</div>
+</footer>
+
+<div id="modal" class="hidden fixed inset-0 z-50 bg-black/70 items-center justify-center p-4">
+<div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-auto p-5">
+<div class="flex justify-between items-center mb-3"><h3 id="mt" class="font-bold"></h3><button onclick="closeM()" class="text-2xl leading-none" aria-label="Close">×</button></div>
+<div id="mb"></div>
+<div class="mt-4 text-right"><button id="md" class="px-4 py-2 rounded bg-slate-900 text-white text-sm">Download</button></div>
+</div>
+</div>
+<div id="toast" class="hidden fixed bottom-6 left-1/2 -translate-x-1/2 z-50 bg-slate-900 text-white text-sm px-4 py-2 rounded shadow"></div>
+
+<style>
+.sec{font-size:1.875rem;font-weight:800;border-bottom:4px solid #f59e0b;display:inline-block;padding-bottom:.25rem}
+.card{background:#fff;border:1px solid #e2e8f0;border-radius:.75rem;padding:1.25rem;box-shadow:0 1px 2px rgba(0,0,0,.05)}
+.inp{width:100%;border:1px solid #cbd5e1;border-radius:.5rem;padding:.65rem;background:#fff;color:#0f172a}
+</style>
+
+<script>
+/* Each document: title and n = image file number inside the assets folder (assets/n.jpg) */
+var DOCS={d21:{title:"Saudi Aramco Official Approval Letter (Page 1)",n:21},d22:{title:"Saudi Aramco Official Approval Letter (Page 2)",n:22},cv:{title:'Curriculum Vitae of Muhammad Tahir',n:'cv'},d12:{title:"BS Chemistry, Khwaja Fareed UEIT",n:12},d33:{title:"B.Ed Transcript, GCUF",n:33},d9:{title:"Intermediate (Pre-Medical), BISE Bahawalpur",n:9},d10:{title:"Matric (Science), BISE Bahawalpur",n:10},d30:{title:"NEBOSH International General Certificate in Occupational Health and Safety",n:30},d27:{title:"NEBOSH Unit: Controlling Workplace Hazards",n:27},d31:{title:"NEBOSH Unit: Health and Safety Practical Application",n:31},d32:{title:"NEBOSH Unit: Management of International Health and Safety",n:32},d11:{title:"IOSH Managing Safely",n:11},d13:{title:"BOSH, UA Engineering",n:13},d34:{title:"First Aid, UA Engineering",n:34},d14:{title:"OSHAcademy: Basic Fire Safety",n:14},d15:{title:"OSHAcademy: Confined Space Entry and Hole Watcher",n:15},d16:{title:"OSHAcademy: Permit to Work System (PTW)",n:16},d18:{title:"OSHAcademy: General Industry Safety and Health",n:18},d17:{title:"Saudi Heart Association: CPR AED Course",n:17},d20:{title:"Saudi Heart Association: BLS Provider",n:20},d8:{title:"Coursera, Khalifa University: HSE Engineering Specialization",n:8},d7:{title:"Coursera, Johns Hopkins: Chemicals and Health",n:7},d1:{title:"UniAthena: Basics of Safety Management",n:1},d3:{title:"Knights of Safety: Hazard Communication Programs",n:3},d4:{title:"Knights of Safety: Personal Protective Equipment (PPE)",n:4},d6:{title:"Knights of Safety: Fire Safety Induction",n:6},d5:{title:"SHEilds: Work at Height Safety Essentials",n:5},d2:{title:"Soft Skills Training (OEC and ICMPD)",n:2},d28:{title:"CPD: Vibration Risk Management",n:28},d29:{title:"Blue Ocean Academy: Cross-Border Workforce Themes",n:29},d19:{title:"C.A.T. Appreciation: 1 Million Safe Man-Hours",n:19},d25:{title:"Aramco and C.A.T. Appreciation: 1 Million Safe Man-Hours",n:25},d24:{title:"Employee of the Month, C.A.T. International",n:24},d26:{title:"Green Champion, World Environment Day",n:26},d23:{title:"Aramco UR Employee Safety Training Card",n:23}};
+var G={"degrees":["d12","d33","d9","d10"],"certs":["d30","d27","d31","d32","d11","d13","d34","d14","d15","d16","d18","d17","d20","d8","d7","d1","d3","d4","d6","d5","d2","d28","d29"],"recs":["d21","d22","d19","d25","d24","d26","d23"]};
+var $=function(i){return document.getElementById(i)};
+var links=[["home","Home"],["about","About"],["experience","Experience"],["certificates","Certificates"],["location","Location"],["faq","FAQ"],["contact","Contact"]];
+links.forEach(function(l){["nav","mnav"].forEach(function(id){var a=document.createElement("a");a.href="#"+l[0];a.textContent=l[1];a.className="hover:text-amber-400";a.onclick=function(){$("mnav").classList.add("hidden");$("mnav").classList.remove("flex")};$(id).appendChild(a)})});
+$("menuBtn").onclick=function(){$("mnav").classList.toggle("hidden");$("mnav").classList.toggle("flex")};
+
+["Safety Monitoring","Hazard Control","Incident Investigation","Toolbox Talks","Safety Induction","Fire Safety","Pipeline Safety","Environment Protection","Engineering Safety","CPR / First Aid"].forEach(function(s){var e=document.createElement("span");e.className="px-3 py-1 rounded-full bg-amber-100 text-amber-900";e.textContent=s;$("skills").appendChild(e)});
+
+var EXP=[
+{co:"C.A.T. International L.L.C (KSA Branch)",role:"HSSE Officer",date:"2026 to Present",proj:"Saudi Aramco CRPO-20 Phase III Pipeline Project, Jafurah",pts:["Part of the team that achieved 1 Million Safe Man-Hours without Lost Time Injury","Named Employee of the Month for safety efforts, January 2026","Member of the plantation team recognised as Green Champion on World Environment Day","Completed Aramco UR Producing Department safety training including Emergency Response and H2S Safety"]},
+{co:"Petroleum Exploration Pvt Ltd",role:"Safety Officer",date:"20-08-2024 to 25-08-2025",proj:"Pipeline Safety & Field Activities in Badin IV South Ayesha & Aminah Gas Fields",pts:["Tool Box Talk","Safety Induction","Safety Observation Round","Inspection of Fire Extinguishers","Implementation of Control Measures","Inspection of Spill Kit","Client Coordination","Incident Reporting","Last Minute Risk Assessment"]},
+{co:"Allied Petroleum Oil & Gas",role:"HSE Officer",date:"25-07-2020 to 09-08-2024",proj:"Construction",pts:["Reported directly to the HSE Coordinator / Manager","Delivered trainings on hazards and safe working methods to be adopted","Strict monitoring of flammable zones","Conducted TBTs (Tool Box Talk) before every activity","Provided trainings on emergency procedures to be followed","Ensured all accidents and incidents were properly investigated and reported","Checked the physical condition of each fire extinguisher and its pressure","Provided relevant information on Health, Safety and Environmental policies to employees"]},
+{co:"Etihad Sugar Mills Pvt Ltd",role:"Safety Officer",date:"20-01-2020 to 20-07-2020",proj:"Safety Monitoring & Hazard Control",pts:["Tool Box Talk","Safety Induction","Safety Observation Round","Hazard Identification","Control Measures","Inspection of Tools","Safety Training","Strict monitoring of flammable zones"]}];
+EXP.forEach(function(x){var d=document.createElement("div");d.className="card relative";d.innerHTML='<span class="absolute -left-[2.15rem] top-6 w-4 h-4 rounded-full bg-amber-500 border-4 border-white"></span><p class="text-xs text-amber-600 font-semibold">'+x.date+'</p><h3 class="font-bold text-lg">'+x.role+'</h3><p class="text-slate-700 font-medium">'+x.co+'</p><p class="text-sm text-slate-500 mt-1"><b>Project:</b> '+x.proj+'</p><ul class="mt-3 text-sm list-disc pl-5 space-y-1">'+x.pts.map(function(t){return"<li>"+t+"</li>"}).join("")+'</ul>';$("exp").appendChild(d)});
+
+function src(id){return "assets/"+DOCS[id].n+".jpg"}
+function mk(id,box){var o=DOCS[id],d=document.createElement("div");d.className="card";d.innerHTML='<img alt="" loading="lazy" class="w-full h-44 object-cover object-top rounded border cursor-pointer" src="'+src(id)+'"><h4 class="font-semibold mt-3 text-sm min-h-[2.5rem]">'+o.title+'</h4><div class="flex gap-2 mt-3"><button class="flex-1 py-2 rounded bg-slate-900 text-white text-sm" onclick="openDoc(\''+id+'\')">View</button><button class="flex-1 py-2 rounded border border-slate-300 text-sm" onclick="dl(\''+id+'\')">Download</button></div>';d.querySelector("img").onclick=function(){openDoc(id)};$(box).appendChild(d)}
+["degrees","certs","recs"].forEach(function(k){G[k].forEach(function(id){mk(id,k)})});
+function toast(m){var t=$("toast");t.textContent=m;t.classList.remove("hidden");setTimeout(function(){t.classList.add("hidden")},2500)}
+function save(name,url){var a=document.createElement("a");a.href=url;a.download=name;document.body.appendChild(a);a.click();a.remove();toast("Download started")}
+function dl(id){var o=DOCS[id];if(id==="cv"){save("Muhammad_Tahir_CV.pdf","assets/Muhammad_Tahir_CV.pdf");return}save(o.title.replace(/[^A-Za-z0-9 ]+/g,"").trim().replace(/ +/g,"_")+".jpg","assets/"+o.n+".jpg")}
+function dlAll(){save("Muhammad_Tahir_Certificates.pdf","assets/Muhammad_Tahir_Certificates.pdf")}
+function openDoc(id){var o=DOCS[id],ims=id==="cv"?["cv","cv2"]:[o.n];$("mt").textContent=o.title;$("mb").innerHTML=ims.map(function(k,i){return'<img alt="'+o.title+'" class="w-full '+(i?'mt-3':'')+'" src="assets/'+k+'.jpg">'}).join("");$("md").onclick=function(){dl(id)};$("modal").classList.remove("hidden");$("modal").classList.add("flex")}
+function closeM(){$("modal").classList.add("hidden");$("modal").classList.remove("flex")}
+$("modal").onclick=function(e){if(e.target===$("modal"))closeM()};
+document.onkeydown=function(e){if(e.key=="Escape")closeM()};
+
+var FAQ=[
+["What is your area of expertise?","Health, safety and environment management on construction, pipeline and oil and gas sites, including hazard control, incident investigation and safety training."],
+["What qualifications do you hold?","BS Chemistry, B.Ed, and professional certificates including NEBOSH, IOSH, OSHAcademy and Saudi Heart Association CPR/BLS."],
+["Where are you available to work?","Saudi Arabia and Gulf countries including the UAE (Dubai), Oman, Qatar and Bahrain. Please reach out through the contact section for current availability."],
+["Which languages do you speak?","English, Arabic and Urdu."],
+["How can I contact you quickly?","Use the WhatsApp or Call buttons on this page, or email muhammadtahir835@gmail.com."]];
+FAQ.forEach(function(f){var d=document.createElement("div");d.className="faq card";d.innerHTML='<button class="w-full flex justify-between text-left font-semibold"><span>'+f[0]+'</span><span class="chev transition">▾</span></button><div class="faq-a text-sm text-slate-600"><p class="pt-3">'+f[1]+'</p></div>';d.querySelector("button").onclick=function(){d.classList.toggle("open")};$("faqs").appendChild(d)});
+
+["MS Office (Word, Excel, PowerPoint, Outlook)","Internet and Email Communication","Report Writing and Documentation","Data Entry and Record Management","PDF Tools (Adobe Acrobat)","Basic Computer Troubleshooting","HSE Documentation and Online Reporting Portals","Incident Reporting Software"].forEach(function(s){var e=document.createElement("span");e.className="px-3 py-1 rounded-full bg-slate-200 text-slate-800";e.textContent=s;$("cskills").appendChild(e)});
+$("form").onsubmit=function(e){e.preventDefault();var b=encodeURIComponent("Name: "+$("fn").value+"\nEmail: "+$("fe").value+"\n\n"+$("fm").value);window.open("https://wa.me/966561664728?text="+b,"_blank");toast("Opening WhatsApp to send your message");$("form").reset()};
+</script>
+</body>
+</html>
